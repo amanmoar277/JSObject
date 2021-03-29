@@ -151,25 +151,25 @@ const obj = {
     } 
 }; 
 ```
-##### 13. flattenObj( objToBeFlattened );
+##### 13. JSObject.flattenObj( objToBeFlattened );
 ```
 // returns an object with all keys-value pair at 0 level
 
-const flattenedObj = flattenObj(obj)
+const flattenedObj = JSObject.flattenObj(obj)
 flattenedObj         // { name: 'moar', class: '1', arr: [ '1', '2' ] }
 ```
 
-##### 14. deepClone( objToBeCloned, alreadyExistingVariableOrObject )     // OR
-##### const result2 = deepClone( objToBeCloned )                          // OR
-##### const result3 = deepClone( objToBeCloned, {}) 
+##### 14. JSObject.deepClone( objToBeCloned, alreadyExistingVariableOrObject )     // OR
+##### const result2 = JSObject.deepClone( objToBeCloned )                          // OR
+##### const result3 = JSObject.deepClone( objToBeCloned, {}) 
 
 ```
-// Object.clone() put same refernce as of parent for nexted object
+// Object.clone(obj) put same refernce as of parent for nexted object
 // But this method clone it into new Object by creating new Object and not any reference
 
 
 const result = {initialValue: 1}
-deepClone(obj, result)
+JSObject.deepClone(obj, result)
 
 const isEqual = result == obj;  // false 
 
@@ -178,7 +178,7 @@ result.nested1.nested2.name  // someName
 obj.nested1.nested2.name     // moar 
 ```
 
-##### 15. deepFreeze( objToBeFreezed )
+##### 15. JSObject.deepFreeze( objToBeFreezed )
 
 ```
 // Object.freeze(obj) freezes only keys-value at 0 level
@@ -186,19 +186,19 @@ obj.nested1.nested2.name     // moar
 
 
 const obj = { prop: { innerProp: 1 } };
-deepFreeze(obj);
+JSObject.deepFreeze(obj);
 
 obj.prop.innerProp = 5;
 console.log(obj.prop.innerProp); // 1  
 ```
 
-##### 16. const newInstance = newFreezedInstance( referenceObj )
+##### 16. const newInstance = JSObject.newFreezedInstance( referenceObj )
 ```
 // Returns a new freezed object
 
 
 const obj = { prop: { innerProp: 1 } };
-newFreezedInstance(obj);
+JSObject.newFreezedInstance(obj);
 
 obj.prop.innerProp = 5;
 console.log(obj.prop.innerProp); // 1  
