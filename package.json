@@ -1,5 +1,5 @@
 {
-  "name": "object-js",
+  "name": "js-object",
   "version": "1.0.0",
   "description": "A JS library which provides more important methods other then methods which Object provides in JS.",
   "main": "index.js",
