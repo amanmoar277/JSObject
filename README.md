@@ -3,22 +3,22 @@ A JS library which provides additional methods other then methods which Object p
 
 ### Functions available
 ```
-freeze
-cloneWithDescriptor
-seal
-isSealed
-isFrozen
-addProperty
-keys
-values
-entries
-keysDeep
-valuesDeep
-entriesDeep
-flattenObj
-deepClone
-deepFreeze
-newFreezedInstance
+1. freeze
+2. cloneWithDescriptor
+3. seal
+4. isSealed
+5. isFrozen
+6. addProperty
+7. keys
+8. values
+9. entries
+10. keysDeep
+11. valuesDeep
+12. entriesDeep
+13. flattenObj
+14. deepClone
+15. deepFreeze
+16. newFreezedInstance
 ```
 
 ### How to import
