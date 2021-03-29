@@ -4,7 +4,7 @@ A JS library which provides additional methods other then methods which Object p
 ### Functions available
 ```
 1. freeze
-2. cloneWithDescriptor
+2. cloneWithDescriptor    (clone deeply with property descriptors)
 3. seal
 4. isSealed
 5. isFrozen
@@ -49,6 +49,7 @@ const freezedObj = JSObject.freeze(obj)
 
 ##### 2. JSObject.cloneWithDescriptor( objectToBeCloned )
 ```
+// It clone deeply with property descriptors
 // It do nothing to passed object and returns cloned object (including the descriptors)
 
 const freezedObj = JSObject.cloneWithDescriptor(obj)
