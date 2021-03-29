@@ -1,5 +1,5 @@
 # JSObject
-A JS library which provides additional methods other then methods which Object provides in JS.
+A dependency free JS library which provides additional methods other then methods which Object provides in JS.
 
 ### Functions available
 ```
